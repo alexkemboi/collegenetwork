@@ -1,74 +1,83 @@
 "use client"
 import React, { useState } from 'react'
- 
+import Image from "next/image"; 
+import mlms from "../../../images/mlms.jpg";
 const Signup: React.FC = () => {
   
 
   return (
-    <div className='flex h-screen items-center justify-center m-auto '>
-          <div className='bg-red-900'>
-              <h1>image</h1>
-          </div>
-          <div className='bg-green-900'>
-              <form className="form mx-auto max-w-lg bg-white p-6 rounded-lg shadow-lg">
-            <p className="title text-2xl font-bold text-center text-green-500 mb-4">
-              MASOMO LIBRARY MANAGEMENT SYSTEM
-            </p>
-            <p className="message text-center text-gray-600 mb-6">
-              Signup now and get full access to our app.
-            </p>
-            <div className="flex flex-wrap gap-4 mb-4">
-              <label className="flex-1">
-                <input
-                  className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-                  type="text"
-                  placeholder="First Name"
-                />
-              </label>
-              <label className="flex-1">
-                <input
-                  className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-                  type="text"
-                  placeholder="Last Name"
-                />
-              </label>
-            </div>
-            <label className="block mb-4">
-              <input
-                className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-                type="email"
-                placeholder="Email"
-              />
-            </label>
-            <label className="block mb-4">
-              <input
-                className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-                type="password"
-                placeholder="Password"
-              />
-            </label>
-            <label className="block mb-4">
-              <input
-                className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-                type="password"
-                placeholder="Confirm Password"
-              />
-            </label>
-            <button
-              className="submit w-full p-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 mb-4"
-              type="submit"
-            >
-              Submit
-            </button>
-            <p className="signin text-center text-gray-600">
-              Already have an account?{" "}
-              <a className="text-green-500 hover:underline" href="/">
-                Login
-              </a>
-            </p>
-              </form>
-          </div>
+    <div className="flex h-screen items-center justify-center w-full">
+    {/* Left Section: Image */}
+    <div className="bg-red-900 w-2/3 h-full">
+      <Image
+        src={mlms}
+        alt="Description"
+        className="h-full w-full object-cover"
+      />
     </div>
+  
+    {/* Right Section: Form */}
+    <div className="bg-white w-1/3 h-full flex items-center">
+      <form className="form mx-auto max-w-lg bg-white p-6 rounded-lg shadow-lg">
+        <p className="title text-2xl font-bold text-center text-green-500 mb-4">
+          MASOMO LIBRARY MANAGEMENT SYSTEM
+        </p>
+        <p className="message text-center text-gray-600 mb-6">
+          Signup now and get full access to our app.
+        </p>
+        <div className="flex flex-wrap gap-4 mb-4">
+          <label className="flex-1">
+            <input
+              className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              type="text"
+              placeholder="First Name"
+            />
+          </label>
+          <label className="flex-1">
+            <input
+              className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              type="text"
+              placeholder="Last Name"
+            />
+          </label>
+        </div>
+        <label className="block mb-4">
+          <input
+            className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            type="email"
+            placeholder="Email"
+          />
+        </label>
+        <label className="block mb-4">
+          <input
+            className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            type="password"
+            placeholder="Password"
+          />
+        </label>
+        <label className="block mb-4">
+          <input
+            className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            type="password"
+            placeholder="Confirm Password"
+          />
+        </label>
+        <button
+          className="submit w-full p-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 mb-4"
+          type="submit"
+        >
+          Submit
+        </button>
+        <p className="signin text-center text-gray-600">
+          Already have an account?{" "}
+          <a className="text-green-500 hover:underline" href="/">
+            Login
+          </a>
+        </p>
+      </form>
+    </div>
+  </div>
+  
     
   )
 }
