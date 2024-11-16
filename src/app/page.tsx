@@ -7,8 +7,8 @@ const mlms: React.FC = () => {
 
   return (
     <>
-      {/* <Login /> */}
-      <Signup />
+      <Login />
+      {/* <Signup /> */}
     </>
   );
 };

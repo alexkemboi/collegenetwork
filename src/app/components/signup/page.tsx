@@ -1,17 +1,23 @@
 "use client"
 import React, { useState } from 'react'
+import mlms from "../../../images/Back.jpg";
+import Image from "next/image";
  
 const Signup: React.FC = () => {
   
 
   return (
-    <div className='flex h-screen items-center justify-center m-auto '>
-          <div className='bg-red-900'>
-              <h1>image</h1>
+    <div className='flex w-full h-screen items-center justify-center'>
+          <div className='bg-red-900 w-2/3'>
+            <Image
+              src={mlms}
+              alt="Description"
+              className="h-full  object-cover"
+            />
           </div>
-          <div className='bg-green-900'>
-              <form className="form mx-auto max-w-lg bg-white p-6 rounded-lg shadow-lg">
-            <p className="title text-2xl font-bold text-center text-green-500 mb-4">
+          <div className='bg-white-900 w-1/3'>
+             <form className="form mx-auto max-w-lg bg-white p-6 rounded-lg shadow-lg">
+            <p className="title text-2xl font-bold text-center text-blue-500 mb-4">
               MASOMO LIBRARY MANAGEMENT SYSTEM
             </p>
             <p className="message text-center text-gray-600 mb-6">
@@ -20,14 +26,14 @@ const Signup: React.FC = () => {
             <div className="flex flex-wrap gap-4 mb-4">
               <label className="flex-1">
                 <input
-                  className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   type="text"
                   placeholder="First Name"
                 />
               </label>
               <label className="flex-1">
                 <input
-                  className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   type="text"
                   placeholder="Last Name"
                 />
@@ -35,34 +41,34 @@ const Signup: React.FC = () => {
             </div>
             <label className="block mb-4">
               <input
-                className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 type="email"
                 placeholder="Email"
               />
             </label>
             <label className="block mb-4">
               <input
-                className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 type="password"
                 placeholder="Password"
               />
             </label>
             <label className="block mb-4">
               <input
-                className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 type="password"
                 placeholder="Confirm Password"
               />
             </label>
             <button
-              className="submit w-full p-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 mb-4"
+              className="submit w-full p-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
               type="submit"
             >
               Submit
             </button>
             <p className="signin text-center text-gray-600">
               Already have an account?{" "}
-              <a className="text-green-500 hover:underline" href="/">
+              <a className="text-blue-500 hover:underline" href="/">
                 Login
               </a>
             </p>
@@ -119,7 +125,7 @@ export default Signup
 //     setError('');
 //     // Handle form submission logic here, like sending data to the server
 //     console.log('Form submitted:', formData);
-//     // greenirect to login page after successful sign-up
+//     // blueirect to login page after successful sign-up
 //     history.push('/login');
 //   };
 
@@ -135,7 +141,7 @@ export default Signup
 //             name="firstName"
 //             value={formData.firstName}
 //             onChange={handleChange}
-//             requigreen
+//             requiblue
 //           />
 //         </div>
 
@@ -147,7 +153,7 @@ export default Signup
 //             name="lastName"
 //             value={formData.lastName}
 //             onChange={handleChange}
-//             requigreen
+//             requiblue
 //           />
 //         </div>
 
@@ -159,7 +165,7 @@ export default Signup
 //             name="email"
 //             value={formData.email}
 //             onChange={handleChange}
-//             requigreen
+//             requiblue
 //           />
 //         </div>
 
@@ -171,7 +177,7 @@ export default Signup
 //             name="password"
 //             value={formData.password}
 //             onChange={handleChange}
-//             requigreen
+//             requiblue
 //           />
 //         </div>
 
