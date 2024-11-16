@@ -128,7 +128,7 @@ export default Signup
 //     setError('');
 //     // Handle form submission logic here, like sending data to the server
 //     console.log('Form submitted:', formData);
-//     // greenirect to login page after successful sign-up
+//     // blueirect to login page after successful sign-up
 //     history.push('/login');
 //   };
 
@@ -144,7 +144,7 @@ export default Signup
 //             name="firstName"
 //             value={formData.firstName}
 //             onChange={handleChange}
-//             requigreen
+//             requiblue
 //           />
 //         </div>
 
@@ -156,7 +156,7 @@ export default Signup
 //             name="lastName"
 //             value={formData.lastName}
 //             onChange={handleChange}
-//             requigreen
+//             requiblue
 //           />
 //         </div>
 
@@ -168,7 +168,7 @@ export default Signup
 //             name="email"
 //             value={formData.email}
 //             onChange={handleChange}
-//             requigreen
+//             requiblue
 //           />
 //         </div>
 
@@ -180,7 +180,7 @@ export default Signup
 //             name="password"
 //             value={formData.password}
 //             onChange={handleChange}
-//             requigreen
+//             requiblue
 //           />
 //         </div>
 
