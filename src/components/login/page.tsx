@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link';
 import React, { useState } from 'react';
-import mlms from "../../../images/Back.jpg";
+import mlms from "../../../public/images/mlms.jpg";
 import Image from "next/image";
 
 
@@ -29,7 +29,7 @@ const Login: React.FC = () => {
             {/* Right side of the screen (Form) */}
             <div className="w-1/3 h-auto max-w-lg mx-auto bg-white p-6 rounded-lg ">
                 <h2 className="text-2xl font-bold text-center mb-6 text-blue-800">
-                    MASOMO LIBRARY MANAGEMENT SYSTEM
+                    MASOMO LOGIN
                 </h2>
 
                 <form onSubmit={handleLogin} className="space-y-6">

@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import Image from "next/image"; 
-import mlms from "../../../images/mlms.jpg";
+import mlms from "../../../public/images/mlms.jpg";
 const Signup: React.FC = () => {
   
 
@@ -20,7 +20,7 @@ const Signup: React.FC = () => {
     <div className="bg-white w-1/3 h-full flex items-center">
       <form className="form mx-auto max-w-lg bg-white p-6 rounded-lg ">
         <p className="title text-2xl font-bold text-center text-blue-800 mb-4">
-          MASOMO LIBRARY MANAGEMENT SYSTEM
+          MASOMO SIGNUP
         </p>
         <p className="message text-center text-gray-600 mb-6">
           Signup now and get full access to our app.
@@ -63,7 +63,7 @@ const Signup: React.FC = () => {
           />
         </label>
         <button
-          className="submit w-full p-3 bg-blue-800 text-white font-semibold rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-800 mb-4"
+          className="submit w-full p-3 bg-blue-800 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-800 mb-4"
           type="submit"
         >
           Submit
