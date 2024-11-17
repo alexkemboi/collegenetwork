@@ -16,18 +16,18 @@ const Login: React.FC = () => {
     };
 
     return (
-        <div className="flex w-full h-screen items-center justify-center ">
+        <div className="flex w-full h-screen items-center justify-center bg-white border">
             {/* Image */}
-            <div className="flex-1 w-2/3 bg-green-900">
+            <div className="flex-1 w-2/3 h-full" >
                 <Image
-                src={mlms}
-                alt="Description"
-                className="h-full  object-cover"
+                    src={mlms}
+                    alt="Description"
+                    className="h-full  object-cover"
                 />
             </div>
 
             {/* Right side of the screen (Form) */}
-            <div className="w-1/3 h-auto max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <div className="w-1/3 h-auto max-w-lg mx-auto bg-white p-6 rounded-lg ">
                 <h2 className="text-2xl font-bold text-center mb-6 text-blue-800">
                     MASOMO LIBRARY MANAGEMENT SYSTEM
                 </h2>
@@ -72,7 +72,7 @@ const Login: React.FC = () => {
                 </p>
             </div>
         </div>
-    );     
+    );
 };
 
 export default Login;

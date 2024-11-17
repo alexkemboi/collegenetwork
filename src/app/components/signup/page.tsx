@@ -18,8 +18,8 @@ const Signup: React.FC = () => {
   
     {/* Right Section: Form */}
     <div className="bg-white w-1/3 h-full flex items-center">
-      <form className="form mx-auto max-w-lg bg-white p-6 rounded-lg shadow-lg">
-        <p className="title text-2xl font-bold text-center text-green-500 mb-4">
+      <form className="form mx-auto max-w-lg bg-white p-6 rounded-lg ">
+        <p className="title text-2xl font-bold text-center text-blue-800 mb-4">
           MASOMO LIBRARY MANAGEMENT SYSTEM
         </p>
         <p className="message text-center text-gray-600 mb-6">
@@ -28,14 +28,14 @@ const Signup: React.FC = () => {
         <div className="flex flex-wrap gap-4 mb-4">
           <label className="flex-1">
             <input
-              className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
               type="text"
               placeholder="First Name"
             />
           </label>
           <label className="flex-1">
             <input
-              className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
               type="text"
               placeholder="Last Name"
             />
@@ -43,34 +43,34 @@ const Signup: React.FC = () => {
         </div>
         <label className="block mb-4">
           <input
-            className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
             type="email"
             placeholder="Email"
           />
         </label>
         <label className="block mb-4">
           <input
-            className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
             type="password"
             placeholder="Password"
           />
         </label>
         <label className="block mb-4">
           <input
-            className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="input w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800"
             type="password"
             placeholder="Confirm Password"
           />
         </label>
         <button
-          className="submit w-full p-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 mb-4"
+          className="submit w-full p-3 bg-blue-800 text-white font-semibold rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-blue-800 mb-4"
           type="submit"
         >
           Submit
         </button>
         <p className="signin text-center text-gray-600">
           Already have an account?{" "}
-          <a className="text-green-500 hover:underline" href="/">
+          <a className="text-blue-800 hover:underline" href="/">
             Login
           </a>
         </p>
