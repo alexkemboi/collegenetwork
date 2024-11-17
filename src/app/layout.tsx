@@ -16,6 +16,8 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "MASOMO LIBRARY MANAGEMENT SYSTEM",
   description: "MASOMO LIBRARY MANAGEMENT SYSTEM",
+  icons: "/favicon.ico",
+
 };
 
 export default function RootLayout({
@@ -25,6 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
