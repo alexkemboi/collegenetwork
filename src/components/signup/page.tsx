@@ -1,7 +1,8 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import Image from "next/image"; 
 import mlms from "../../../public/images/mlms.jpg";
+import Link from 'next/link';
 const Signup: React.FC = () => {
   
 
@@ -70,9 +71,9 @@ const Signup: React.FC = () => {
         </button>
         <p className="signin text-center text-gray-600">
           Already have an account?{" "}
-          <a className="text-blue-800 hover:underline" href="/">
+          <Link className="text-blue-800 hover:underline" href="/">
             Login
-          </a>
+          </Link>
         </p>
       </form>
     </div>

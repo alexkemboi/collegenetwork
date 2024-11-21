@@ -1,13 +1,13 @@
 "use client"
 import dynamic from 'next/dynamic';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const DynamicReactApexChart = dynamic(() => import('react-apexcharts'), {
   ssr: false,
 });
 
 const AreaChart = () => {
-  const [chartData, setChartData] = useState([
+  const [chartData] = useState([
     {
       name: 'series1',
       data: [31, 40, 28, 51, 42, 109, 100],
@@ -18,7 +18,7 @@ const AreaChart = () => {
     },
   ]);
 
-  const [options, setOptions] = useState({
+  const [options] = useState({
     chart: {
       height: 350,
       type: 'area', 

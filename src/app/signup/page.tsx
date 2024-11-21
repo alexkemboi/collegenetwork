@@ -1,5 +1,3 @@
-
-import Login from "@/components/login/page";
 import Signup from "@/components/signup/page";
 import React from "react";
 const LoginPage = () => {

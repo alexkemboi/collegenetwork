@@ -1,5 +1,5 @@
 "use client"
-import React, { Component } from "react";
+import React from "react";
 import Chart from "react-apexcharts";
 
 class PieChart extends React.Component {

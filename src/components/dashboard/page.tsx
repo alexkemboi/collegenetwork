@@ -1,7 +1,5 @@
 "use client"
 import React, { useEffect, useState } from "react";
-import ColumnChart from "../ApexCharts/ColumnChart";
-import PieChart from "../ApexCharts/PieChart";
 import TopCards from "../TopCards";
 
 const Dashboard = () => {
