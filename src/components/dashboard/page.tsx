@@ -19,11 +19,11 @@ const Dashboard = () => {
 	}, [])
 	return (
 		<Layout>
-			<div className="mb-5 bg-blue-900">
+			<div className="mb-5 bg-transparent">
 				<div className="flex flex-col w-full ">
-					<div className=" bg-blue">
+					<div className=" bg-transparent">
 						<div className=" px-4">
-							<div className="mixed-chart bg-transparent" >
+							<div className="mixed-chart " >
 								<TopCards />
 							</div>
 						</div>
