@@ -12,8 +12,8 @@ import AddIcCallSharpIcon from "@mui/icons-material/AddIcCallSharp";
 import LockOpenSharpIcon from "@mui/icons-material/LockOpenSharp";
 import Tooltip from "@mui/material/Tooltip";
 import FeedSharpIcon from "@mui/icons-material/FeedSharp";
-import profilepivc from "../../../../public/images/autquiaut.png";
-import ico from "../../../../public/images/ico.jpg";
+import profilepivc from "../../../public/images/autquiaut.png";
+import ico from "../../../public/images/ico.jpg";
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 
@@ -38,10 +38,10 @@ export default function Navbar() {
 	return (
 		<>
 			<div className="fixed bottom-0  w-full">
-				<Box sx={{ flexGrow: 1 }} className="mt-20 mb-20 bg-black">
+				<Box sx={{ flexGrow: 1 }} className="mt-20 mb-20 bg-blue-800">
 					<AppBar
-						className="flex justify-between h-15 text-slate-50 bg-black">
-						<Toolbar className="flex justify-between bg-black">
+						className="flex justify-between h-15 text-slate-50 bg-blue-800">
+						<Toolbar className="flex justify-between bg-blue-800">
 							<div className="flex ">
 								<Image
 									width={30}
@@ -76,7 +76,7 @@ export default function Navbar() {
 									<Tooltip
 										title="Contact us"
 										arrow
-										className="text-blue">
+										className="text-blue-800">
 										<IconButton
 											size="large"
 											edge="start"

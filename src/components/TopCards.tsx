@@ -12,9 +12,9 @@ import React from 'react'
 
 const TopCards = () => {
     return (
-        <div className="grid lg:grid-cols-8 gap-4 py-4 sm:w-full bg-black">
+        <div className="grid lg:grid-cols-8 gap-4 py-4 sm:w-full bg-transparent">
             {/* Books Available Card */}
-            <div className="lg:col-span-2 col-span-1 shadow-lg bg-black flex justify-between w-full border rounded-lg hover:shadow-md hover:bg-gray-100 transition duration-300 ease-in-out border-solid border-blue-400 border-r-4">
+            <div className="lg:col-span-2 col-span-1 shadow-lg bg-transparent flex justify-between w-full border rounded-lg hover:shadow-md hover:bg-gray-100 transition duration-300 ease-in-out border-solid border-blue-400 border-r-4">
                 <div className="flex flex-col justify-center w-full m-4">
                     <p className="text-gray-600 text-sm font-bold">Books Available</p>
                     <div className="flex w-auto h-1 mt-2">
@@ -28,7 +28,7 @@ const TopCards = () => {
             </div>
 
             {/* Books Issued Card */}
-            <div className="lg:col-span-2 col-span-1 shadow-lg bg-black flex justify-between w-full border rounded-lg hover:shadow-md hover:bg-gray-100 transition duration-300 ease-in-out border-solid border-red-400 border-r-4">
+            <div className="lg:col-span-2 col-span-1 shadow-lg bg-transparent flex justify-between w-full border rounded-lg hover:shadow-md hover:bg-gray-100 transition duration-300 ease-in-out border-solid border-red-400 border-r-4">
                 <div className="flex flex-col justify-center w-full m-4">
                     <p className="text-gray-600 text-sm font-bold">Books Issued</p>
                     <div className="flex w-auto h-1 mt-2">
@@ -42,7 +42,7 @@ const TopCards = () => {
             </div>
 
             {/* Library Members Card */}
-            <div className="lg:col-span-2 col-span-1 shadow-lg bg-black flex justify-between w-full border rounded-lg hover:shadow-md hover:bg-gray-100 transition duration-300 ease-in-out border-solid border-green-500 border-r-4">
+            <div className="lg:col-span-2 col-span-1 shadow-lg bg-transparent flex justify-between w-full border rounded-lg hover:shadow-md hover:bg-gray-100 transition duration-300 ease-in-out border-solid border-green-500 border-r-4">
                 <div className="flex flex-col justify-center w-full pb-4 m-4">
                     <p className="text-gray-600 text-sm font-bold">Library Members</p>
                     <div className="flex w-auto h-1 mt-2">
@@ -56,7 +56,7 @@ const TopCards = () => {
             </div>
 
             {/* Overdue Returns Card */}
-            <div className="lg:col-span-2 col-span-1 shadow-lg bg-black flex justify-between w-full border rounded-lg hover:shadow-md hover:bg-gray-100 transition duration-300 ease-in-out border-solid border-gray-400 border-r-4">
+            <div className="lg:col-span-2 col-span-1 shadow-lg bg-transparent flex justify-between w-full border rounded-lg hover:shadow-md hover:bg-gray-100 transition duration-300 ease-in-out border-solid border-gray-400 border-r-4">
                 <div className="flex flex-col justify-center w-full p-4">
                     <p className="text-gray-600 text-sm font-bold">Overdue Returns</p>
                     <div className="flex w-auto h-1 mt-2">

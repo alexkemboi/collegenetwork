@@ -13,24 +13,24 @@ const SideBarComponent = () => {
 		{
 			label: 'Library Management',
 			items: [
-				{ icon: <AddHomeIcon className="text-gray-500 text-4xl mx-4" />, text: 'Home', link: '/dashboard' },
-				{ icon: <WalletIcon className="text-gray-500 text-4xl mx-4" />, text: 'View Books', link: '/view-books' },
-				{ icon: <LockIcon className="text-gray-500 text-4xl mx-4" />, text: 'Add Books', link: '/add-book' },
-				{ icon: <AssignmentTurnedInIcon className="text-gray-500 text-4xl mx-4" />, text: 'Search Books', link: '/search-books' },
-				{ icon: <HowToRegIcon className="text-gray-500 text-4xl mx-4" />, text: 'Manage Members', link: '/manage-members' }
+				{ icon: <AddHomeIcon className="text-blue-950 text-4xl mx-4" />, text: 'Home', link: '/dashboard' },
+				{ icon: <WalletIcon className="text-blue-950 text-4xl mx-4" />, text: 'View Books', link: '/view-books' },
+				{ icon: <LockIcon className="text-blue-950 text-4xl mx-4" />, text: 'Add Books', link: '/add-book' },
+				{ icon: <AssignmentTurnedInIcon className="text-blue-950 text-4xl mx-4" />, text: 'Search Books', link: '/search-books' },
+				{ icon: <HowToRegIcon className="text-blue-950 text-4xl mx-4" />, text: 'Manage Members', link: '/manage-members' }
 			]
 		},
 		{
 			label: 'Account Management',
 			items: [
-				{ icon: <SettingsIcon className="text-gray-500 text-4xl mx-4" />, text: 'System Setup', link: '/setup' },
-				{ icon: <SmsIcon className="text-gray-500 text-4xl mx-4" />, text: 'Log out', link: '/' }
+				{ icon: <SettingsIcon className="text-blue-950 text-4xl mx-4" />, text: 'System Setup', link: '/setup' },
+				{ icon: <SmsIcon className="text-blue-950 text-4xl mx-4" />, text: 'Log out', link: '/' }
 			]
 		}
 	];
 	return (
 		<>
-			<div className='mt-20 mr-4'>
+			<div className='mt-20 mr-4 bg-transparent'>
 				<Sidebar rootStyles={{
 					[`.${sidebarClasses.container}`]: {
 						backgroundColor: "transparent",
@@ -45,7 +45,7 @@ const SideBarComponent = () => {
 					<Menu>
 						{sidebarItems.map((section, index) => (
 							<div key={index}>
-								<h4 className="text-gray-500 mx-4">{section.label}</h4>
+								<h4 className="text-blue mx-4">{section.label}</h4>
 								{section.items.map((item, itemIndex) => (
 									<MenuItem key={itemIndex} href={item.link}>
 										{item.link ? (

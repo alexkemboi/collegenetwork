@@ -63,7 +63,7 @@ const Login: React.FC = () => {
                         type="submit"
                         className="w-full bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
                     >
-                        Login
+                        <Link href="/dashboard" className="text-blue-600 hover:underline">Login</Link>
                     </button>
                 </form>
 
