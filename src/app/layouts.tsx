@@ -11,11 +11,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <div className='h-screen'>
             <Navbar />
-            <div className='w-full xs:flex-col md:w-full md:flex md:justify-between'>
-                <div className='w-1/5 md:block bg-blue-900'>
+            <div className='w-full xs:flex-col md:w-full md:flex md:justify-between bg-blue-900'>
+                <div className='w-1/5 md:block'>
                     <SideBarComponent />
                 </div>
-                <div className='overflow-y-auto h-full  w-4/5 mt-20'>
+                <div className='overflow-y-auto h-full  w-4/5 mt-20 '>
                     {children}
                 </div>
             </div>

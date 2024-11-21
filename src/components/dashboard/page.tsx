@@ -19,7 +19,7 @@ const Dashboard = () => {
 	}, [])
 	return (
 		<Layout>
-			<div className="mb-5 bg-transparent">
+			<div className="mb-5 bg-blue-900">
 				<div className="flex flex-col w-full ">
 					<div className=" bg-blue">
 						<div className=" px-4">
