@@ -1,27 +1,29 @@
+"use client"
 import React, { useState } from 'react';
 // import { useLocation, useNavigate } from 'react-router-dom';
 import Image from "next/image";
-import mlms from "../../../images/Back.jpg";
+import mlms from "../../../public/images/Back.jpg";
+import Link from 'next/link';
 
 const VerifyOTPPage: React.FC = () => {
   const [otp, setOtp] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [error, setError] = useState<string>('');
-//   const { state } = useLocation();
-//   const navigate = useNavigate();
+  //   const { state } = useLocation();
+  //   const navigate = useNavigate();
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    
+
     // Simulate OTP verification logic
     if (!otp) {
       setError('Please enter the OTP');
       return;
     }
-    
+
     // Simulate OTP verification (replace with actual logic)
     // console.log(`Verifying OTP for ${state.email}`);
-    
+
     // After OTP verification, navigate to Reset Password page
     // navigate('/reset-password');
   };
@@ -34,19 +36,19 @@ const VerifyOTPPage: React.FC = () => {
     newOtp[index] = value;
     setOtp(newOtp.join(''));
 
-    
+
   };
 
- 
+
 
   return (
     <div className="flex h-screen">
 
-        {/* Image Container */}
+      {/* Image Container */}
       <div className="w-1/2">
-        <Image 
-          src={mlms} 
-          alt="Verify OTP" 
+        <Image
+          src={mlms}
+          alt="Verify OTP"
           className="w-full h-full object-cover"
         />
       </div>
@@ -68,16 +70,16 @@ const VerifyOTPPage: React.FC = () => {
             />
           ))}
 
-        <button 
-            type="submit" 
-            className="flex flex-col w-full p-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-200 mt-auto"
-        >
-          Verify OTP
-        </button>
+          <button
+            type="submit"
+            className="flex  w-full p-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-200 mt-auto"
+          >
+            <Link href="/newpassword" className="text-white">  Verify OTP</Link>
+          </button>
         </form>
       </div>
 
-      
+
     </div>
   );
 };

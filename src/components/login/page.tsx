@@ -63,12 +63,15 @@ const Login: React.FC = () => {
                         type="submit"
                         className="w-full bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
                     >
-                        <Link href="/dashboard" className="text-blue-600 hover:underline">Login</Link>
+                        <Link href="/dashboard" className="text-white">Login</Link>
                     </button>
                 </form>
 
                 <p className="text-center text-gray-600 text-sm mt-4">
                     Don’t have an account? <Link href="/signup" className="text-blue-600 hover:underline">Sign up</Link>
+                </p>
+                <p className="text-center text-gray-600 text-sm mt-4">
+                    <Link href="/confirmpass" className="text-blue-600">Forgot Password?</Link>
                 </p>
             </div>
         </div>

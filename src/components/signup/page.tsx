@@ -67,11 +67,14 @@ const Signup: React.FC = () => {
           className="submit w-full p-3 bg-blue-800 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-800 mb-4"
           type="submit"
         >
-          Submit
+         <Link className="text-white" href="/">
+         Submit
+         Reset 
+          </Link>
         </button>
         <p className="signin text-center text-gray-600">
           Already have an account?{" "}
-          <Link className="text-blue-800 hover:underline" href="/">
+          <Link className="text-blue-600" href="/">
             Login
           </Link>
         </p>
