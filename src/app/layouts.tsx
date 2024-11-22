@@ -12,7 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className='h-screen'>
             <Navbar />
             <div className='w-full xs:flex-col md:w-full md:flex md:justify-between '>
-                <div className='w-1/5 md:block bg-blue-900'>
+                <div className='w-1/5 md:block bg-gray-500'>
                     <SideBarComponent />
                 </div>
                 <div className='overflow-y-auto h-full  w-4/5 mt-20 bg-[#F5F5F5]'>

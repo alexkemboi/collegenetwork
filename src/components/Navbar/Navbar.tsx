@@ -25,7 +25,7 @@ export default function Navbar() {
 	};
 
 	const handleClose = () => {
-		// Your function logic
+
 	};
 
 	const handleLogout = async () => {
@@ -34,14 +34,14 @@ export default function Navbar() {
 		// setLoading(true)
 	};
 
-	const iconstyle = "black";
+	const iconstyle = "blue";
 	return (
 		<>
 			<div className="fixed bottom-0  w-full">
-				<Box sx={{ flexGrow: 1 }} className="mt-20 mb-20 bg-blue-800">
+				<Box sx={{ flexGrow: 1 }} className="mt-20 mb-20 bg-slate-50">
 					<AppBar
-						className="flex justify-between h-15 text-slate-50 bg-blue-800">
-						<Toolbar className="flex justify-between bg-blue-800">
+						className="flex justify-between h-15 textslate-50 bg-slate-50">
+						<Toolbar className="flex justify-between bg-slate-50">
 							<div className="flex ">
 								<Image
 									width={30}
@@ -50,7 +50,7 @@ export default function Navbar() {
 									alt="pic"
 									className="rounded-lg items-center justify-center"
 								/>
-								<h6 className="hidden pl-4 text-slate-50 text-2xl font-semibold xs:hidden sm:hidden md:block lg:block">MASOMO</h6>
+								<h6 className="hidden pl-4 text-blue-800 text-2sm font-semibold xs:hidden sm:hidden md:block lg:block">MASOMO</h6>
 							</div>
 							<div className="flex">
 								<Typography
@@ -63,9 +63,13 @@ export default function Navbar() {
 										<IconButton
 											size="large"
 											edge="start"
-											color="inherit"
+											sx={{
+												'&:hover': {
+													backgroundColor: (theme) => theme.palette.info.main
+												}
+											}}
 											aria-label="menu"
-											sx={{ mr: 2 }}>
+										>
 											<HelpOutlineRoundedIcon className={iconstyle} />
 										</IconButton>
 									</Tooltip>
@@ -80,9 +84,12 @@ export default function Navbar() {
 										<IconButton
 											size="large"
 											edge="start"
-											color="inherit"
 											aria-label="menu"
-											sx={{ mr: 2 }}>
+											sx={{
+												'&:hover': {
+													backgroundColor: (theme) => theme.palette.info.main
+												}
+											}}>
 											<AddIcCallSharpIcon className={iconstyle} />
 										</IconButton>
 									</Tooltip>
@@ -93,13 +100,16 @@ export default function Navbar() {
 									<Tooltip
 										title="About"
 										arrow
-										className="text-slate-50">
+										className="text-blue-800">
 										<IconButton
 											size="large"
 											edge="start"
-											color="inherit"
 											aria-label="menu"
-											sx={{ mr: 2 }}>
+											sx={{
+												'&:hover': {
+													backgroundColor: (theme) => theme.palette.info.main
+												}
+											}}>
 											<FeedSharpIcon className={iconstyle} />
 										</IconButton>
 									</Tooltip>
@@ -114,9 +124,12 @@ export default function Navbar() {
 										<IconButton
 											size="large"
 											edge="start"
-											color="inherit"
 											aria-label="menu"
-											sx={{ mr: 2 }}>
+											sx={{
+												'&:hover': {
+													backgroundColor: (theme) => theme.palette.info.main
+												}
+											}}>
 											<LockOpenSharpIcon className={iconstyle} />
 										</IconButton>
 									</Tooltip>
