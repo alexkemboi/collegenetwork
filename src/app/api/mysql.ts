@@ -5,7 +5,7 @@ export default async function ConnectMysql() {
     const connection = mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "",
+      password: "Nbm@2020",
       database: "masomo",
     });
     return connection;
