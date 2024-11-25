@@ -14,9 +14,9 @@ const SideBarComponent = () => {
 			label: 'Library Management',
 			items: [
 				{ icon: <AddHomeIcon className="text-blue-950 text-4xl mx-4" />, text: 'Home', link: '/dashboard' },
-				{ icon: <WalletIcon className="text-blue-950 text-4xl mx-4" />, text: 'View Books', link: '/view-books' },
-				{ icon: <LockIcon className="text-blue-950 text-4xl mx-4" />, text: 'Add Books', link: '/add-book' },
-				{ icon: <AssignmentTurnedInIcon className="text-blue-950 text-4xl mx-4" />, text: 'Search Books', link: '/search-books' },
+				{ icon: <WalletIcon className="text-blue-950 text-4xl mx-4" />, text: 'View Books', link: '/books' },
+				{ icon: <LockIcon className="text-blue-950 text-4xl mx-4" />, text: 'Add Books', link: '/book' },
+				{ icon: <AssignmentTurnedInIcon className="text-blue-950 text-4xl mx-4" />, text: 'Search Books', link: '/books' },
 				{ icon: <HowToRegIcon className="text-blue-950 text-4xl mx-4" />, text: 'Manage Members', link: '/manage-members' }
 			]
 		},
