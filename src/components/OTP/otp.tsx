@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 // import { useLocation, useNavigate } from 'react-router-dom';
 import Image from "next/image";
-import mlms from "../../../public/images/Back.jpg";
+import mlms from "../../../public/images/mlms.jpg";
 import Link from 'next/link';
 
 const VerifyOTPPage: React.FC = () => {
