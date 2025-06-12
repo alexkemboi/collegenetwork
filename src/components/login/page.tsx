@@ -10,11 +10,27 @@ const Login: React.FC = () => {
     const [password, setPassword] = useState<string>("");
     const [error, setError] = useState<string | null>(null);
     const router = useRouter();
+    const users = [
+        { email: "admin@college.com", password: "123", role: "admin" },
+        { email: "student@college.com", password: "student123", role: "student" },
+        { email: "al@gmail.com", password: "al@gmail.com", role: "teacher" },
+    ];
 
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
         setError(null);
 
+        // Check against local demo users
+        const user = users.find((u) => u.email === email && u.password === password);
+
+        if (user) {
+            console.log("Logged in with local user:", user);
+            localStorage.setItem("user", JSON.stringify(user));
+            router.push("/dashboard");
+            return;
+        }
+
+        // If not in local users, attempt API login
         try {
             const res = await fetch("http://localhost:3000/api/auth/login", {
                 method: "POST",
@@ -24,20 +40,21 @@ const Login: React.FC = () => {
 
             if (!res.ok) {
                 const { error } = await res.json();
-                setError(error || "Failed to login");
+                setError(error || "Invalid email or password");
                 return;
             }
 
             const data = await res.json();
-            console.log("Login successful:", data);
+            console.log("Logged in with API user:", data);
 
-            // Redirect to the dashboard
+            localStorage.setItem("user", JSON.stringify(data));
             router.push("/dashboard");
         } catch (err) {
             console.error("Login error:", err);
             setError("An unexpected error occurred");
         }
     };
+
 
     return (
         <div className="flex w-full h-screen items-center justify-center bg-white border">
