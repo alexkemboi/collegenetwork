@@ -42,13 +42,13 @@ const Login: React.FC = () => {
     return (
         <div className="flex w-full h-screen items-center justify-center bg-white border">
             {/* Image */}
-            <div className="flex-1 w-2/3 h-full">
+            <div className="flex w-1/2 h-full">
                 <Image src={mlms} alt="Description" className="h-full object-cover" />
             </div>
 
             {/* Right side of the screen (Form) */}
-            <div className="w-1/3 h-auto max-w-lg mx-auto bg-white p-6 rounded-lg">
-                <h2 className="text-2xl font-bold text-center mb-6 text-blue-800">MASOMO LOGIN</h2>
+            <div className="w-1/2 h-auto max-w-lg mx-auto bg-white p-6 rounded-lg">
+                <h2 className="text-2xl font-bold text-center mb-6 text-blue-800">COLLEGE NETWORK</h2>
 
                 {error && <p className="text-red-500 text-center">{error}</p>}
 

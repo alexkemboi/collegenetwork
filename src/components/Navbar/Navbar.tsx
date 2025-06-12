@@ -50,7 +50,7 @@ export default function Navbar() {
 									alt="pic"
 									className="rounded-lg items-center justify-center"
 								/>
-								<h6 className="hidden pl-4 text-blue-800 text-2sm font-semibold xs:hidden sm:hidden md:block lg:block">MASOMO</h6>
+								<h6 className="hidden pl-4 text-blue-800 text-2sm font-semibold xs:hidden sm:hidden md:block lg:block">COLLEGE NETWORK</h6>
 							</div>
 							<div className="flex">
 								<Typography

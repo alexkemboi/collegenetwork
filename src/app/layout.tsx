@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "MASOMO LIBRARY MANAGEMENT SYSTEM",
-  description: "MASOMO LIBRARY MANAGEMENT SYSTEM",
+  title: "COLLEGE NETWORK",
+  description: "COLLEGE NETWORK",
   icons: "/favicon.ico",
 
 };

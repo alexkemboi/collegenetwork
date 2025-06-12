@@ -1,66 +1,102 @@
 "use client";
 import React from 'react';
 import { Sidebar, Menu, MenuItem, sidebarClasses } from "react-pro-sidebar";
-import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
-import SettingsIcon from '@mui/icons-material/Settings';
-import AddHomeIcon from '@mui/icons-material/AddHome';
-import LockIcon from '@mui/icons-material/Lock';
-import WalletIcon from '@mui/icons-material/Wallet';
-import SmsIcon from '@mui/icons-material/Sms';
-import HowToRegIcon from '@mui/icons-material/HowToReg';
+import {
+	Users,
+	BookOpen,
+	Upload,
+	Bell,
+	ShieldCheck,
+} from "lucide-react";
+
 const SideBarComponent = () => {
 	const sidebarItems = [
 		{
-			label: 'Library Management',
+			label: "Posts",
 			items: [
-				{ icon: <AddHomeIcon className="text-blue-950 text-4xl mx-4" />, text: 'Home', link: '/dashboard' },
-				{ icon: <WalletIcon className="text-blue-950 text-4xl mx-4" />, text: 'View Books', link: '/books' },
-				{ icon: <LockIcon className="text-blue-950 text-4xl mx-4" />, text: 'Add Books', link: '/book' },
-				{ icon: <AssignmentTurnedInIcon className="text-blue-950 text-4xl mx-4" />, text: 'Search Books', link: '/books' },
-				{ icon: <HowToRegIcon className="text-blue-950 text-4xl mx-4" />, text: 'Manage Members', link: '/manage-members' }
-			]
+				{
+					icon: <Users className="text-white" />,
+					text: "posts",
+					link: "/timeline",
+				},
+			],
 		},
 		{
-			label: 'Account Management',
+			label: "Learning",
 			items: [
-				{ icon: <SettingsIcon className="text-blue-950 text-4xl mx-4" />, text: 'System Setup', link: '/setup' },
-				{ icon: <SmsIcon className="text-blue-950 text-4xl mx-4" />, text: 'Log out', link: '/' }
-			]
-		}
+				{
+					icon: <BookOpen className="text-white" />,
+					text: "Learning",
+					link: "/learning",
+				},
+			],
+		},
+		{
+			label: "Contribution",
+			items: [
+				{
+					icon: <Upload className="text-white" />,
+					text: "Contribution",
+					link: "/contribution",
+				},
+			],
+		},
+		{
+			label: "Notifications",
+			items: [
+				{
+					icon: <Bell className="text-white" />,
+					text: "Notifications",
+					link: "/notifications",
+				},
+			],
+		},
+		{
+			label: "Sell",
+			items: [
+				{
+					icon: <ShieldCheck className="text-white" />,
+					text: "sell",
+					link: "/sell",
+				},
+			],
+		},
 	];
+
 	return (
-		<>
-			<div className='mt-20 mr-4 bg-transparent'>
-				<Sidebar rootStyles={{
+		<div className="mt-20 ml-4 w-full">
+			<Sidebar
+				rootStyles={{
 					[`.${sidebarClasses.container}`]: {
-						backgroundColor: "transparent",
-						height: '80vh',
+						backgroundColor: "#1e293b", // Tailwind's slate-800
+						color: "#f8fafc", // Tailwind's slate-50
+						borderRadius: "0.5rem",
+						padding: "1rem",
+						width: "220px",
 					},
-					breakPoint: "sm",
-					width: 160,
-					collapsed: true,
-					closeOnClick: true,
-					toggled: true
-				}}>
-					<Menu>
-						{sidebarItems.map((section, index) => (
-							<div key={index}>
-								<h4 className="text-blue mx-4">{section.label}</h4>
-								{section.items.map((item, itemIndex) => (
-									<MenuItem key={itemIndex} href={item.link}>
-										{item.link ? (
-											<>{item.icon} {item.text}</>
-										) : (
-											<>{item.icon} {item.text}</>
-										)}
-									</MenuItem>
-								))}
-							</div>
-						))}
-					</Menu>
-				</Sidebar>
-			</div>
-		</>
+				}}
+			>
+				<Menu>
+					{sidebarItems.map((section, index) => (
+						<div key={index} className="mb-4">
+							<h4 className="text-slate-300 uppercase text-xs font-semibold tracking-wider px-2 mb-2">
+								{section.label}
+							</h4>
+							{section.items.map((item, itemIndex) => (
+								<MenuItem
+									key={itemIndex}
+									component={<a href={item.link} />}
+									icon={item.icon}
+									className="text-sm hover:bg-slate-700 hover:text-slate-950 rounded-md transition-all duration-200 px-2 py-1 w-full"
+								>
+									{item.text}
+								</MenuItem>
+							))}
+						</div>
+					))}
+				</Menu>
+			</Sidebar>
+		</div>
 	);
 };
 
