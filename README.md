@@ -3,7 +3,7 @@ College Network is a social networking platform tailored for college and school 
 enables users to connect, communicate, and collaborate across academic years through social
 features like posts, messaging, and following. Each college has a customized news board, and
 users can contribute resources or sell academic materials.
-Chapter 2: Features Overview
+ Features Overview
  Follow and connect with peers, seniors, and juniors.
  Chatbot and private messaging features.
  College-specific live news boards.
