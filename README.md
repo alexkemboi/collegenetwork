@@ -28,8 +28,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Check out our [https://collegenetwork-pi.vercel.app]
 
 Demo Login Credentials
-Email	                        Password	
-admin@college.com	            123	
-student@college.com	          student123	
-al@gmail.com	                al@gmail.com	
+                        
+Email admin@college.com	   Password	         123	
+Email student@college.com	   Password	       student123	
+Email al@gmail.com	           Password	     al@gmail.com	
 # college network
